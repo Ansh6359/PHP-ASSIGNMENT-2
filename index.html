@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- This is the document type declaration for an HTML document -->
+<html lang="en">
+<!-- Opening tag for the HTML root element with language attribute set to English -->
+
+<head>
+    <!- head section of the HTML document -->
+    <meta charset="UTF-8">
+    <!-- tag specifying the character encoding as UTF-8 for international character support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- tag ensuring compatibility with Internet Explorer's rendering engine -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tag for setting the viewport width and initial zoom level for responsive design -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- tag instructing search engines not to index or follow this page -->
+
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" href="./index1.css">
+
+    <!-- Title of the web page displayed in the browser's title bar -->
+    <title>Sign in</title>
+</head>
+
+<body>
+    <!-- The body of the HTML document -->
+    <div class="container">
+        <!-- A container element for page content -->
+        <h1>Sign In</h1>
+        <!-- Main heading for the sign-in section -->
+
+        <form action="login.php" method="post">
+            <!-- A form for user input with POST method pointing to "login.php" -->
+            <label for="username">Username:</label>
+            <!-- Label for the username input field -->
+            <input type="text" id="username" name="username" required>
+            <!-- Text input field for the username, with "required" attribute for form validation -->
+
+            <label for="password">Password:</label>
+            <!-- Label for the password input field -->
+            <input type="password" id="password" name="password" required>
+            <!-- Password input field for the password, with "required" attribute for form validation -->
+
+            <button type="submit">Sign In</button>
+            <!-- Button to submit the form and initiate the sign-in process -->
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+        <!-- Paragraph with a link to the registration page for users who don't have an account -->
+    </div>
+</body>
+</html>
